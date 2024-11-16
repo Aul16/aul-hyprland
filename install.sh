@@ -126,6 +126,15 @@ execute_script "yay.sh"
 # Installing hyprland packages
 execute_script "hyprland.sh"
 
+# Fonts installation
+execute_script "fonts.sh"
+
+# Installing Bluetooth packages
+execute_script "bluetooth.sh"
+
+# Installing pipewire
+execute_script "pipewire.sh"
+
 ### Script is done ###
 printf "\n${GREEN} Installation Completed.\n"
 echo -e "${GREEN} You can start Hyprland by typing Hyprland (note the capital H).\n"
