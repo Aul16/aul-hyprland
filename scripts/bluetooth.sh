@@ -11,7 +11,7 @@ if [[ $BLUETOOTH =~ ^[Yy]$ ]]; then
     printf " Installing Bluetooth Packages...\n"
  blue_pkgs="bluez bluez-utils blueman"
     if ! yay -S --noconfirm $blue_pkgs 2>&1 | tee -a $LOG; then
-       	print_error "Failed to install bluetooth packages - please check the install.log"    
+       	echo -e "${ERROR} Failed to install bluetooth packages - please check the install.log"    
     printf " Activating Bluetooth Services...\n"
     sudo systemctl enable --now bluetooth.service
     sleep 2

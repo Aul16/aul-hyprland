@@ -6,6 +6,7 @@ pipewire=(
     pipewire
     wireplumber
     pipewire-audio
+    pavucontrol
     pipewire-alsa
     pipewire-pulse
     sof-firmware

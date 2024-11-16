@@ -143,7 +143,7 @@ if [[ $HYP =~ ^[Yy]$ ]]; then
     if command -v Hyprland >/dev/null; then
         exec Hyprland
     else
-         print_error " Hyprland not found. Please make sure Hyprland is installed by checking install.log.\n"
+        echo -e "\e[1A\e[K${ERROR} - Hyprland not found. Please check the installation logs"
         exit 1
     fi
 else
